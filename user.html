@@ -1,0 +1,36 @@
+<?php
+$conn=mysqli_connect("localhost","root","","danish");
+extract($_POST);
+?>
+<html>
+	<head>
+		<title> Search Your Book</title>
+			<link rel="stylesheet" type="text/css" href="userstyle.css">
+	</head>
+	<body>
+		<header>
+		    <div class="container">
+		      <h1 class="logo"></h1>
+
+		      <nav>
+		        <ul>
+		          <li><a href="home.html">Home</a></li>
+				  <li><a href="cart.html">Cart</a></li>
+		          <li><a href="login.html">logout</a></li>
+		          
+		        </ul>
+		      </nav>
+		    </div>
+		  </header>
+		<div class="header">
+			<form>
+				<h1> Find Your Favourite Book</h1>
+				<div class="form-box">
+				<input type="text" class="search-field" placeholder="Enter Book/Author Name">
+				<button class="search-btn" type="button">Search</button>
+
+				</div>
+				</form>
+		</div>
+	</body>
+</html>

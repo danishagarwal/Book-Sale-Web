@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<link rel="stylesheet" type="text/css" href="stylereg1.css">
+		<script> 
+		
+			// Function to check Whether both passwords 
+			// is same or not. 
+			function checkPassword(form) { 
+				password1 = form.password1.value; 
+				password2 = form.password2.value; 
+
+				// If password not entered 
+				if (password1 == '') 
+					alert ("Please enter Password"); 
+					
+				// If confirm password not entered 
+				else if (password2 == '') 
+					alert ("Please enter confirm password"); 
+					
+				// If Not same return False.	 
+				else if (password1 != password2) { 
+					alert ("\nPassword did not match: Please try again...") 
+					return false; 
+				} 
+
+				// If same return True. 
+				else{ 
+					alert("Password Match: Welcome to GeeksforGeeks!") 
+					return true; 
+				} 
+			} 
+		</script> 
+		<style> 
+			.gfg { 
+				font-size:30px; 
+				color:white; 
+				font-weight:bold; 
+				text-align:center;
+				
+			} 
+			
+			
+			
+		</style> 
+	</head> 
+	<body> 
+		
+		<div class = "gfg">Please fill up the form </div> 
+		<form action="reg.php" name="form" method="POST"> 
+			<input type="email" name="email" placeholder="Email ID"><br>
+			<input type="password" name="password" placeholder="Enter Password"><br>
+			<input type="password" name="password1" placeholder="Repeat Password"><br>
+			
+			
+			<input type="submit" name="Register" value="Register">
+	
+		</form> 
+	</body> 
+</html>					 

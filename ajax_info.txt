@@ -1,0 +1,7 @@
+<h1>Hope You Enjoyed The Experience Of Our IP Mini Project</h1>
+
+<form action="home.html">
+<input type="submit" value="Click For Home Page">
+
+</form>
+<h1>Thank You!!!</h1>
